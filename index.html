@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Restaurant Ordering</title>
+</head>
+<body>
+
+    <div id="menu">
+        <h2>Menu</h2>
+        <ul id="menu-list">
+            <li data-id="1" data-price="10.99">Burger</li>
+            <li data-id="2" data-price="8.99">Pizza</li>
+            <li data-id="3" data-price="5.99">Salad</li>
+            <!-- Add more menu items as needed -->
+        </ul>
+    </div>
+
+    <div id="order">
+        <h2>Your Order</h2>
+        <ul id="order-list"></ul>
+        <p>Total: $<span id="total">0.00</span></p>
+    </div>
+
+    <div id="billing">
+        <h2>Billing Information</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <br>
+        <button id="checkout">Checkout</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
